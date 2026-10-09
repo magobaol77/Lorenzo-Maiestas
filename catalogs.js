@@ -1,4 +1,4 @@
-export {LEADERS} from './leaders.js?v=20261009-68';
+export {LEADERS} from './leaders.js?v=20261009-69';
 export const MARKETS = [
  {id:'mercato-01',name:'Mercato 01',image:'assets/mercato-01.webp',effect:'Ottieni 5 monete.'},
  {id:'mercato-02',name:'Mercato 02',image:'assets/mercato-02.webp',effect:'Ottieni 5 servitori.'},
