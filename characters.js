@@ -9,7 +9,7 @@ export const CHARACTERS={};
 const eras=[[
  entry('Artisan',3,[],[actionBonus('production',2)]),
  entry('Farmer',3,[],[actionBonus('harvest',2)]),
- entry('Knight',2,[gain({legno:1})],[actionBonus('imprese',2)]),
+ entry('Knight',2,[{kind:'privilege'}],[actionBonus('imprese',2)]),
  entry('Dame',3,[],[discount('personaggi',{monete:1}),actionBonus('personaggi',2)]),
  entry('Stonemason',3,[],[discount('edifici',{legno:1,pietra:1}),actionBonus('edifici',2)]),
  entry('Warlord',2,[gain({militari:3})],[actionBonus('territori',2)]),
