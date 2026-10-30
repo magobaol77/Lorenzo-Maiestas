@@ -5,7 +5,7 @@ export const LEADERS=[
  leader('leader-maiestas-01','Palla Strozzi','assets/leader-maiestas-01.webp','3 Personaggi e 3 fede','Ogni volta che acquisisci un Territorio, attivane immediatamente l’effetto di Raccolto.','permanente',{requirementSpec:{personaggi:3,fede:3},trigger:{kind:'activateAcquiredTerritory'}}),
  leader('leader-maiestas-02','Ladislao VII Jagellone','assets/leader-maiestas-02.webp','20 punti vittoria','Quando lo giochi, gioca un altro Leader ignorandone i requisiti.','immediato',{requirementSpec:{vittoria:20},onPlay:{kind:'playLeaderFree'}}),
  leader('leader-maiestas-03','Martin Lutero','assets/leader-maiestas-03.webp','5 militari e 1 carta di ciascun tipo','Non subisci gli effetti delle scomuniche.','permanente',{requirementSpec:{militari:5,territori:1,edifici:1,personaggi:1,imprese:1}}),
- leader('leader-maiestas-04','Paracelso','assets/leader-maiestas-04.webp','3 Territori e 5 Edifici','Una volta per round: spendi 1 legno, pietra, servitore o moneta per ottenere 2 risorse a scelta tra gli stessi tipi.','una volta per round',{requirementSpec:{territori:3,edifici:5},oncePerRound:{kind:'resourceMarket',resources:['legno','pietra','servitori','monete'],gain:2}}),
+ leader('leader-maiestas-04','Paracelso','assets/leader-maiestas-04.webp','3 Territori e 5 pietre','Una volta per round: spendi 1 legno, pietra, servitore o moneta per ottenere 2 risorse a scelta tra gli stessi tipi.','una volta per round',{requirementSpec:{territori:3,pietra:5},oncePerRound:{kind:'resourceMarket',resources:['legno','pietra','servitori','monete'],gain:2}}),
  leader('leader-maiestas-05','Giulio II','assets/leader-maiestas-05.webp','9 carte sviluppo totali, di qualsiasi tipo','Una volta per round: spendi 1 legno, 1 pietra e 1 moneta per ottenere 3 fede.','una volta per round',{requirementSpec:{totalCards:9},oncePerRound:{kind:'trade',cost:{legno:1,pietra:1,monete:1},resources:{fede:3}}}),
  leader('leader-maiestas-06','Carlo VIII','assets/leader-maiestas-06.webp','5 servitori, 5 militari e 5 fede','Ogni servitore speso per aumentare il valore di un’azione fornisce +2 invece di +1.','permanente',{requirementSpec:{servitori:5,militari:5,fede:5},servantMultiplier:2}),
  leader('leader-maiestas-07','Ferdinando d’Aragona','assets/leader-maiestas-07.webp','13 monete e 13 servitori','Ogni volta che acquisisci un’Impresa, ottieni 1 pietra, 1 legno e 1 punto vittoria.','permanente',{requirementSpec:{monete:13,servitori:13},trigger:{kind:'ventureGain',resources:{pietra:1,legno:1,vittoria:1}}}),
@@ -37,3 +37,9 @@ export const LEADERS=[
  leader('leader-maiestas-33','Sisto V','assets/leader-maiestas-33.webp','6 pietre, 6 legni, 6 servitori e 6 monete','Ogni volta che paghi durante la fase di scomunica e ti difendi, ottieni 5 punti vittoria.','permanente',{requirementSpec:{pietra:6,legno:6,servitori:6,monete:6},excommunicationDefenseVP:5}),
  leader('leader-maiestas-34','Lucrezia Borgia','assets/leader-maiestas-34.webp','6 carte sviluppo dello stesso tipo','Tutti i dadi colorati ricevono +2. Ogni volta che piazzi un familiare colorato, ottieni 1 punto vittoria.','permanente',{requirementSpec:{sameType:6},coloredDiceBonus:2,coloredPlacementVP:1})
 ];
+
+
+
+
+
+

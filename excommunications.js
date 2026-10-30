@@ -26,3 +26,9 @@ export const EXCOMMUNICATIONS=[
  tile(3,9,'Forza militare onerosa','Perdi 1 punto per ogni punto militare posseduto.','militaryScorePenalty')
 ];
 export const EXCOMMUNICATION_LEVELS=[1,2,3].map(level=>EXCOMMUNICATIONS.filter(tile=>tile.level===level));
+
+
+
+
+
+

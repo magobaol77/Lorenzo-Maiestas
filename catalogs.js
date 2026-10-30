@@ -1,4 +1,4 @@
-export {LEADERS} from './leaders.js?v=20261009-69';
+export {LEADERS} from './leaders.js?v=20261030-17';
 export const MARKETS = [
  {id:'mercato-01',name:'Mercato 01',image:'assets/mercato-01.webp',effect:'Ottieni 5 monete.'},
  {id:'mercato-02',name:'Mercato 02',image:'assets/mercato-02.webp',effect:'Ottieni 5 servitori.'},
@@ -11,3 +11,18 @@ export const MARKETS = [
  {id:'mercato-09',name:'Mercato 09',image:'assets/mercato-09.webp',effect:'Attiva 1 tuo Territorio a scelta con un dado di valore 7 e ottieni 1 favore.'},
  {id:'mercato-10',name:'Mercato 10',image:'assets/mercato-10.webp',effect:'Attiva 1 tuo Edificio a scelta con un dado di valore 7 e ottieni 1 favore.'}
 ];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

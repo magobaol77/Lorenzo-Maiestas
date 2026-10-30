@@ -44,3 +44,9 @@ const eras=[[
 ]];
 eras.forEach((cards,era)=>cards.forEach((card,n)=>VENTURES[`imprese-${era+1}-${String(n+1).padStart(2,'0')}`]=card));
 export function ventureCostOptions(state,venture){if(venture.military?.combined)return state.resources.militari>=venture.military.required?[{kind:'combined',label:`Paga le risorse e ${venture.military.pay} punti militari`}]:[];const options=[];if(Object.keys(venture.cost).length)options.push({kind:'resources',label:'Paga con risorse'});if(venture.military&&state.resources.militari>=venture.military.required)options.push({kind:'military',label:`Paga ${venture.military.pay} punti militari`});return options;}
+
+
+
+
+
+

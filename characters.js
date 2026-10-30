@@ -52,3 +52,9 @@ export function characterActionBonus(state,action){return state.collection.filte
 export function characterDiscount(state,type){const result={};for(const c of state.collection.filter(c=>c.type==='personaggi'))for(const e of CHARACTERS[c.id]?.permanent||[])if(e.kind==='discount'&&e.type===type)for(const [k,v] of Object.entries(e.resources))result[k]=(result[k]||0)+v;return result;}
 export function characterPawnBonus(state,pawn){let bonus=0;for(const c of state.collection.filter(c=>c.type==='personaggi'))for(const e of CHARACTERS[c.id]?.permanent||[]){if(e.kind==='neutralBonus'&&pawn===3)bonus+=e.value;if(e.kind==='coloredValue'&&pawn!==3)bonus=Math.max(bonus,e.value-state.dice[pawn]);}return bonus;}
 export function hasCharacterEffect(state,kind){return state.collection.some(c=>c.type==='personaggi'&&(CHARACTERS[c.id]?.permanent||[]).some(e=>e.kind===kind));}
+
+
+
+
+
+

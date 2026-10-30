@@ -13,7 +13,7 @@ entry('Carpenter’s Shop',{monete:1,legno:2},[gain({vittoria:3})],4,[chooseTrad
 entry('Theater',{monete:1,legno:2},[gain({vittoria:5})],5,[countGain('personaggi',{vittoria:1})]),
 entry('Triumphal Arch',{monete:1,pietra:2},[gain({vittoria:5})],1,[countGain('imprese',{vittoria:1})]),
 entry('Tax Office',{legno:2,pietra:1},[gain({vittoria:4})],4,[countGain('territori',{monete:1})]),
-entry('Mint',{legno:1,pietra:2},[gain({vittoria:4})],2,[countGain('edifici',{monete:1})]),
+entry('Mint',{legno:1,pietra:2},[gain({vittoria:4})],4,[countGain('edifici',{monete:1})]),
 entry('Residence',{pietra:2},[gain({vittoria:1})],2,[trade({monete:1},{},'1 privilegio del Consiglio',{kind:'privilege'})]),
 entry('Chapel',{legno:2},[gain({fede:1,vittoria:1})],2,[trade({monete:1},{fede:1})]),
 entry('City Workshop',{legno:1,pietra:1,monete:1},[gain({vittoria:3})],4,[trade({vittoria:1},{},'1 privilegio del Consiglio',{kind:'privilege'})],'Effetto confermato: paga 1 punto vittoria per ottenere 1 privilegio del Consiglio.'),
@@ -50,3 +50,9 @@ entry('Market Hall',{monete:2,legno:1,pietra:2},[gain({vittoria:5})],2,[{kind:'m
 eras.forEach((cards,era)=>cards.forEach((card,n)=>BUILDINGS[`edifici-${era+1}-${String(n+1).padStart(2,'0')}`]=card));
 export function describeCost(cost){const labels={monete:'monete',legno:'legno',pietra:'pietra',servitori:'servitori',militari:'punti militari',fede:'punti fede',vittoria:'punti vittoria'};return Object.entries(cost).map(([k,v])=>`${v} ${labels[k]}`).join(' + ')||'Nessun costo';}
 export function describeBuildingCost(building){return building.costOptions?building.costOptions.map(describeCost).join(' OPPURE '):describeCost(building.cost);}
+
+
+
+
+
+
